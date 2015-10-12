@@ -155,7 +155,7 @@ var ExImage = React.createClass({
     }
     var resizeMode = this.props.resizeMode || style.resizeMode || 'cover';
 
-    var nativeProps = merge(this.props, {
+    var nativeProps = merge({}, this.props, {
       style,
       tintColor: style.tintColor,
       resizeMode: resizeMode,
